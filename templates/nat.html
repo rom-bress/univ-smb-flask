@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% extends "layout.html" %}
+
+{% block content %}
+<h1>Règle NAT</h1>
+
+<table>
+    <tr>
+        <td>IP INTERNE</td>
+        <td>PORT INTERNE</td>
+        <td>IP PUBLIQUE</td>
+        <td>PORT PUBLIQUE</td>                    
+    </tr>
+
+    <tr>
+        <td>10.0.0.1</td>
+        <td>22</td> 
+        <td>186.25.36.14</td>
+        <td>1029</td>                   
+    </tr>
+
+    <tr>
+        <td>10.0.0.1</td>
+        <td>80</td> 
+        <td>186.25.36.14</td>
+        <td>1024</td>                   
+    </tr>
+ 
+    <tr>
+        <td>10.0.0.1</td>
+        <td>80</td> 
+        <td>186.25.36.14</td>
+        <td>80</td>                   
+    </tr>
+
+    <tr>
+        <td>10.0.0.2</td>
+        <td>22</td> 
+        <td>186.25.36.14</td>
+        <td>1563</td>                    
+    </tr>
+    </table>
+    {% endblock %}
+

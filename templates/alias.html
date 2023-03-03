@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% extends "layout.html" %}
+
+        {% block content %}
+        <h1>Tableau des Alias</h1>
+
+        <table>
+            <tr>
+                <td>Alias</td>
+                <td>IP : Port</td>                    
+            </tr>
+
+            <tr>
+                <td>WebServer1_SSH</td>
+                <td>10.0.0.1 : 22</td>                    
+            </tr>
+
+            <tr>
+                <td>WebServer1_HTML</td>
+                <td>10.0.0.1 : 80</td>                    
+            </tr>
+
+            <tr>
+                <td>DhcpServer1</td>
+                <td>10.0.0.2 : 67</td>                    
+            </tr>
+        </table>
+        {% endblock %}
+

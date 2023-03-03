@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% extends "layout.html" %}
+
+        {% block content %}
+
+        <h1>Ajouter des NAT</h1>
+
+        <h2>Formulaire d'ajout de règle NAT</h2>
+        <div>
+ 
+            <fieldset>
+                <legend>INTERNE</legend>
+
+                <label>Adresse IP</label>
+                <input type="text" ><br>
+
+                <label>Port</label>
+                <input type="number"><br>
+
+            </fieldset>
+
+
+            <fieldset>
+                <legend>EXTERNE</legend>
+
+                <label> Adresse IP</label>
+                <input type="text" ><br>
+
+                <label>Port</label>
+                <input type="number"><br>
+
+
+
+             </fieldset>
+ 
+            <p><input type="submit" value="Soummettre"></p>
+        </div>
+        {% endblock %}
+
+    

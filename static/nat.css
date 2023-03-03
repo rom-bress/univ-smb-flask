@@ -1,0 +1,30 @@
+h1 {
+    text-align: center;
+}
+
+table{
+    border-width:1px; 
+    border-style:solid; 
+    border-color:black;
+    border-collapse:collapse;
+    width:70%;
+    margin: auto;
+
+}
+
+td { 
+    text-align: center;
+    border-width:1px;
+    border-style:solid; 
+    border-color:black;
+    width:20%;
+    
+ 
+}
+
+footer {
+    position:absolute;
+    bottom:0;  
+    width:100%;
+    height:100px;   
+ }
