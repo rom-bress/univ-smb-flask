@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% extends "layout.html" %}
+{{ super }}
+        {% block content %}
+        <form action="/formulaire" method="POST">
+            <h1>Connexion</h1>
+            
+            <label><b>Nom d'utilisateur</b></label>
+            <input type="text" placeholder="Entrer le nom d'utilisateur" name="username" required>
+           
+           
+            <input type="submit" name="Register"' >
+        </form>
+        {% endblock %}

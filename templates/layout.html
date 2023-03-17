@@ -3,7 +3,7 @@
     <head>
         <title>TP2</title>
         <meta charset= "utf-8">
-        <link rel="stylesheet" href="menu.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='menu.css')}}">
         <link rel="stylesheet" href="index.css">
 
     </head>
@@ -13,10 +13,12 @@
         <header>
             <nav>
                 <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="alias.html">Alias</a></li>
-                    <li><a href="nat.html">NAT</a></li>
-                    <li><a href="ajout_nat.html">Ajouter NAT</a></li>
+                    <li><a href="{{ url_for('start') }}">Accueil</a></li>
+                    <li><a href="{{ url_for('alias') }}">Alias</a></li>
+                    <li><a href="{{ url_for('rules_nat') }}">NAT</a></li>
+                    <li><a href="{{ url_for('rules_nat_add') }}">Ajouter NAT</a></li>
+                  
+                    
                 </ul>
             </nav>
     
